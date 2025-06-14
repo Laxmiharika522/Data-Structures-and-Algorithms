@@ -2,8 +2,8 @@
 using namespace std;
 void printpattern(int n){
     for(int i=0;i<n;i++){
-        for(int j=0;j<n;j++){
-            cout<<"* ";
+        for(char j='E'-i;j<='E';j++){
+            cout<<j<<" ";
         }
         cout<<endl;
     }
