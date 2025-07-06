@@ -1,0 +1,24 @@
+//Majority_element.cpp
+
+Let’s say arr[] = {2, 2, 1, 1, 1, 2, 2}
+
+Phase 1: Finding Candidate
+Initialize candidate = None, count = 0
+
+For each element:
+
+If count == 0: set candidate = element
+
+If element == candidate: count++
+
+Else: count--
+
+This phase gives us a potential majority candidate.
+
+Phase 2: Verifying Candidate
+Count the actual occurrences of the candidate in the array.
+
+If count > ⌊n/2⌋ → it's the majority.
+
+Else → No majority element.
+
