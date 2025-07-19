@@ -1,7 +1,8 @@
-//Find the majority element which appears more than N/2 times 
+//Find the majority element which appears more than N/2 times \
+//at most we can have only one element appeaaring more than N/2 times
 //brute:
 //TC------>O(N^2)
-#include<iostream>
+/*#include<iostream>
 #include<vector>
 using namespace std;
 int majority_element(vector<int>vec){
@@ -26,7 +27,7 @@ int main(){
         cin>>vec[i];
     }
     cout<<majority_element(vec);
-}
+}*/
 
 //Better ------>Hashing
 //TC------> O(NlogN)+O(N)
@@ -70,6 +71,7 @@ int majority_element(vector<int>vec){
    int el;
    for(int i=0;i<vec.size();i++){
         if(cnt==0){
+            cnt =1 ;
             el=vec[i];
         }
         else if(vec[i]==el){
