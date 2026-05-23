@@ -17,8 +17,8 @@ int consecutive_ones(int arr[],int n){
 int main(){
     int n;
     cin>>n;
-    int arr[n-1];
-    for(int i=0;i<n-1;i++){
+    int arr[n];
+    for(int i=0;i<n;i++){
         cin>>arr[i];
     }
     cout<<consecutive_ones(arr,n);
