@@ -41,7 +41,7 @@ int main(){
     quick_sort(vec,0,n-1);
     //since vector is sorted
     int largest=vec[n-1];
-    for(int i=n-2;i>=0;i++){//already sorted
+    for(int i=n-2;i>=0;i--){//already sorted
         if(vec[i]!=largest){
             cout<<vec[i];
             break;
