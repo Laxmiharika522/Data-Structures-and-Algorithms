@@ -10,7 +10,14 @@ int main(){
 
     //precomputing
     //taking an duplicate array.hash is the name of duplicate array
-    int hash[13]={0}; //in question if they mentioned there are at maximum 12 numbers so size will be 13
+    #include <vector>
+    #include <algorithm> // For std::max_element
+    // ...
+    int max_val = 0;
+    if (n > 0) {
+        max_val = *std::max_element(arr, arr + n);
+    }
+    std::vector<int> hash(max_val + 1, 0); // Dynamically size hash array
     for(int i=0;i<n;i++){
         hash[arr[i]]+=1;
     }
